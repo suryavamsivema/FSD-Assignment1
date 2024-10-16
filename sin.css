@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #0d0f22;
+    color: white;
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.left-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 60px;
+}
+
+.left-section h1 {
+    font-size: 48px;
+    line-height: 1.2;
+}
+
+.left-section p {
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.left-section a {
+    color: #3a86ff;
+    text-decoration: none;
+}
+
+.left-section a:hover {
+    text-decoration: underline;
+}
+
+.right-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.nav {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+}
+
+.nav a {
+    color: #999;
+    margin-left: 20px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.nav .signin-active {
+    color: white;
+    font-weight: bold;
+}
+
+.nav a:hover {
+    text-decoration: underline;
+}
+
+.signin-form {
+    background-color: #1e2339;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.input-box {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.input-box input {
+    width: 300px;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: white;
+    font-size: 16px;
+}
+
+.input-box input::placeholder {
+    color: #888;
+}
+
+.recover-password {
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+.recover-password a {
+    color: #999;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.recover-password a:hover {
+    text-decoration: underline;
+}
+
+.signin-btn {
+    width: 100%;
+    padding: 15px;
+    background-image: linear-gradient(to right, #6a11cb, #2575fc);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.signin-btn:hover {
+    background-image: linear-gradient(to right, #5a00b8, #2050d4);
+}

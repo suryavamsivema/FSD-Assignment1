@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+}
+
+main {
+    padding: 40px;
+}
+
+.dashboard-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.dashboard-header h1 {
+    font-size: 32px;
+    color: #333;
+    font-weight: bold;
+}
+
+.dashboard {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.card {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 45%;
+}
+
+.card h2 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    color: #333;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+}
+
+.list {
+    list-style: none;
+}
+
+.list li {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+    font-size: 16px;
+    font-weight: 500;
+    color: #333;
+}
+
+.list li:last-child {
+    border-bottom: none;
+}
+
+.salary, .offers {
+    color: #28a745;
+    font-weight: bold;
+}
+
+.card .list li:hover {
+    background-color: #f9f9f9;
+    cursor: pointer;
+}
